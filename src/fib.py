@@ -1,5 +1,6 @@
 from functools import lru_cache
 from typing import Annotated
+
 from pydantic import Field
 
 type PositiveInt = Annotated[int, Field(gt=0)]

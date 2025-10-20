@@ -1,9 +1,11 @@
-from collections.abc import Iterable
-from pydantic import BaseModel
-from fastapi import FastAPI
 import uuid
+from collections.abc import Iterable
 
-from .fib import PositiveInt, fib as lib_fib
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+from .fib import PositiveInt
+from .fib import fib as lib_fib
 
 
 class Item(BaseModel):
